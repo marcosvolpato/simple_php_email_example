@@ -9,6 +9,9 @@ $smtpHost = 'smtp-mail.outlook.com';//servidor smtp
 $receivers = ['receiver1@gmail.com', 'receiver2@yahoo.com.br'];//email de destino
 $site_name = 'Teste';
 
+if(file_exists("local_config.php"))
+	include_once("local_config.php");
+
 
 
 $from = $_POST['nome'];
